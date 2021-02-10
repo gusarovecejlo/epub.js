@@ -66,7 +66,7 @@ module.exports = {
 					loader: "babel-loader",
 					options: {
 						presets: [["@babel/preset-env", {
-							targets: LEGACY ? "defaults" : ["last 2 versions", "ie == 11"],
+							targets: ["last 2 versions", "IE 10"],
 							corejs: 3,
 							useBuiltIns: "usage",
 							bugfixes: true,
