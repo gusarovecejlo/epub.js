@@ -66,7 +66,7 @@ module.exports = {
 					loader: "babel-loader",
 					options: {
 						presets: [["@babel/preset-env", {
-							targets: LEGACY ? "defaults" : "last 2 Chrome versions, last 2 Safari versions, last 2 ChromeAndroid versions, last 2 iOS versions, last 2 Firefox versions, last 2 Edge versions",
+							targets: LEGACY ? "defaults" : ["last 2 versions", "ie == 11"],
 							corejs: 3,
 							useBuiltIns: "usage",
 							bugfixes: true,
